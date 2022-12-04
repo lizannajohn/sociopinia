@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="300dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/bebasneuereg"
+        android:text="Welcome Back                                 Login Here"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textemail"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/roundedtxtfield"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:textColor="@color/maroon"
+        android:textColorHint="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <EditText
+        android:id="@+id/textpwd"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/roundedtxtfield"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/maroon"
+        android:textColorHint="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textemail" />
+
+    <CheckBox
+        android:id="@+id/rememberme"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:buttonTint="@color/greyblack"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:text="Remember Me?"
+        android:textColor="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpwd" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/succlogin"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundedtxtfield"
+        android:backgroundTint="@color/maroon"
+        android:fontFamily="@font/bebasneuereg"
+        android:onClick="onclicksucclogin"
+        android:text="Login"
+        android:textColor="@color/off_white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rememberme"
+        tools:ignore="OnClick" />
+
+
+    <TextView
+        android:id="@+id/newto"
+        android:layout_width="196dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:text="New to SociOpinia?"
+        android:textColor="@color/greyblack"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/succlogin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signuprdrct"
+        android:layout_width="96dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="#00EDE8EE"
+        android:fontFamily="@font/bebasneuereg"
+        android:text="Sign up here"
+        android:textColor="@color/maroon"
+        android:textSize="20dp"
+        android:onClick="signuprdrct"
+        app:layout_constraintStart_toEndOf="@+id/newto"
+        app:layout_constraintTop_toBottomOf="@+id/succlogin"
+        tools:ignore="OnClick" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/frgtpwd"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="#00EDE8EE"
+        android:fontFamily="@font/bebasneuereg"
+        android:onClick="onclickforgotpwd"
+        android:text="Forgot Password?"
+        android:textColor="@color/maroon"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signuprdrct"
+        tools:ignore="OnClick" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frgtpwd" />
+
+    <TextView
+        android:id="@+id/loginvia"
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/bebasneuereg"
+        android:text="Login via Social Media"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageButton
+        android:id="@+id/twt"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#00EDE8EE"
+        android:src="@drawable/twitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fb"
+        app:layout_constraintTop_toBottomOf="@+id/loginvia" />
+
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#00EDE8EE"
+        android:src="@drawable/facebook"
+        app:layout_constraintStart_toEndOf="@+id/insta"
+        app:layout_constraintTop_toBottomOf="@+id/loginvia" />
+
+    <ImageButton
+        android:id="@+id/insta"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#00EDE8EE"
+        android:src="@drawable/instagram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginvia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

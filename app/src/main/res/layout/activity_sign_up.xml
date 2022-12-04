@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/signupdesc"
+        android:layout_width="300dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/bebasneuereg"
+        android:text="We're only getting started                    let us guide you through                    but first, let's sign you up"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textuname"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/roundedtxtfield"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:textColor="@color/maroon"
+        android:textColorHint="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupdesc" />
+
+    <EditText
+        android:id="@+id/textemail"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/roundedtxtfield"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:textColor="@color/maroon"
+        android:textColorHint="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textuname" />
+
+    <EditText
+        android:id="@+id/textpwd"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/roundedtxtfield"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/maroon"
+        android:textColorHint="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textemail" />
+
+    <CheckBox
+        android:id="@+id/tandc"
+        android:layout_width="311dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="315dp"
+        android:buttonTint="@color/greyblack"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:text="By clicking Submit, you agree to the Terms &amp; Conditions and Privacy Policy"
+        android:textColor="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpwd" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/succsignup"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundedtxtfield"
+        android:backgroundTint="@color/maroon"
+        android:fontFamily="@font/bebasneuereg"
+        android:onClick="onclicksuccsignup"
+        android:text="Sign In"
+        android:textColor="@color/off_white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tandc"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/acct"
+        android:layout_width="251dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/librebaskervilleitalic"
+        android:text="Already have an account?"
+        android:textColor="@color/greyblack"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/succsignup" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginrdrct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00EDE8EE"
+        android:fontFamily="@font/bebasneuereg"
+        android:text="Login Here"
+        android:textColor="@color/maroon"
+        android:textSize="20dp"
+        android:onClick="loginrdrct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/acct"
+        app:layout_constraintTop_toBottomOf="@+id/tandc"
+        tools:ignore="OnClick" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/maroon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginrdrct" />
+
+    <TextView
+        android:id="@+id/socmed"
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/bebasneuereg"
+        android:text="Sign Up via Social Media"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00EDE8EE"
+        android:src="@drawable/facebook"
+        app:layout_constraintStart_toEndOf="@+id/insta"
+        app:layout_constraintTop_toBottomOf="@+id/socmed" />
+
+    <ImageButton
+        android:id="@+id/insta"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00EDE8EE"
+        android:src="@drawable/instagram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/socmed" />
+
+    <ImageButton
+        android:id="@+id/twt"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00EDE8EE"
+        android:src="@drawable/twitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/fb"
+        app:layout_constraintTop_toBottomOf="@+id/socmed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

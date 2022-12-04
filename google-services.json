@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "983729264884",
+    "firebase_url": "https://sociopinia-c6718-default-rtdb.firebaseio.com",
+    "project_id": "sociopinia-c6718",
+    "storage_bucket": "sociopinia-c6718.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983729264884:android:f1cc2f4d8714e7595ae6a1",
+        "android_client_info": {
+          "package_name": "com.example.sociopinia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983729264884-b6i9jb9pdnha3gdpfk1r9fg84lvrke5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8QW9Y_krtuaeDzQ5MtanKGBdItc7SIkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983729264884-b6i9jb9pdnha3gdpfk1r9fg84lvrke5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

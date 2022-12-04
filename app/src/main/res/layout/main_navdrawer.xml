@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maroon"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_margin="1dp"
+        android:onClick="ClickLogo"
+        android:paddingTop="10dp"
+        android:src="@drawable/sociopinialogo" />
+
+    <View
+        android:layout_width="390dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/off_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="ClickDashboard"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/dashboard" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dashboard"
+            android:textColor="@color/off_white"
+            android:fontFamily="@font/librebaskervillebold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            tools:ignore="Suspicious0dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="ClickMyAcct"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/myaccount"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Account"
+            android:textColor="@color/off_white"
+            android:fontFamily="@font/librebaskervillebold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            tools:ignore="Suspicious0dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="ClickLogout"
+        android:layout_marginTop="440dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logouticon"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logout"
+            android:textColor="@color/off_white"
+            android:fontFamily="@font/librebaskervillebold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            tools:ignore="Suspicious0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
